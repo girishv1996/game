@@ -1,0 +1,5 @@
+<body>
+    
+
+    <img src="Q1answer.png" alt="my image"  width="1000" height="290">
+</body>

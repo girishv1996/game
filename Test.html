@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <style>
+      /* CSS for styling goes here */
+      #timer {
+        font-size: 36px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+<div id="answer" style="display: none;">
+
+<center><a href="q1answer.html" target="blank">Click Here for Answer</a> </center>
+
+</div>
+    <img src="Q1.png" alt="my image"  width="1000" height="290">
+<center>
+<h3>TIME REMAINING
+    <div id="timer"></div> </h3>
+</center>
+    <script>
+      // JavaScript code for the timer
+      var count = 180;
+      var timer = setInterval(function() {
+        count--;
+        document.getElementById("timer").innerHTML = count;
+        if (count <= 0) {
+          clearInterval(timer);
+        }
+      }, 1000);
+
+ setTimeout(function(){
+    document.getElementById("content").style.display = "block";
+  }, 30000);
+
+setTimeout(function(){
+    document.getElementById("answer").style.display = "block";
+  }, 180000);
+    </script>
+
+<h4>1.Firewall we currently use in our Member firm ? </h4>
+<h4>2.One of the famous certfication in Cyber security? </h4>
+<h4>3.One who do SSDLC in our team for internal applications? </h4>
+<h4>4.Team which host infrastrcuture for client </h4>
+<h4>5.Tool we currently use for Vulnerability Management </h4>
+
+<hr/>
+<h4>Answers are :  </h4>
+
+  
+<div id="content" style="display: none;">
+
+<h3>
+  <marquee width="90%" direction="right" height="100px">
+
+1.CHECKPOINT 2.CISSP 3.ASWANI 4.DMC 5.QUALYS
+
+</marquee>
+</h3>
+</div>
+
+
+</body>
+
+</html>
